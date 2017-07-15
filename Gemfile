@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'rake'
+gem 'puma'
+gem 'rack-contrib'
+
 gem 'middleman', '~> 3.4'
 
 # Deploy to GitHub Pages
