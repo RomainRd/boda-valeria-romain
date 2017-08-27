@@ -1,12 +1,23 @@
 // BANNER //
 .banner {
-  height: calc(100vh - 100px);
-  background: url('../images/banner-essai.png') no-repeat center center fixed;
-  // background: url('http://via.placeholder.com/1050x750') no-repeat center center fixed;
+  height: calc(100vh - 7em);
+  background: url('../images/fondbanner.png') no-repeat center center;
+  // background: url('http://via.placeholder.com/3050x2150') no-repeat center center;
+  background-size: cover !important;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  text-align: center;
 }
 
-// Header //
+#main-logo{
+  max-width: 100vw;
+}
+
+// Nav-bar Main //
 .main-header{
+  display: block;
   position: fixed;
   height: 7em;
   width: 100vw;
@@ -14,20 +25,22 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
-.main-header .nav-top .nav-logo>div{
-  transition: all 500ms ease;
-}
-.main-header .nav-top .nav-logo a {
-    display: block;
+  font-family: $header-font;
+  font-weight: lighter;
+  opacity: 0;
 }
 
-// Logo //
-.logo-homepage img, .logo-subpage img{
-    height: 100px
+
+// Nav-bar Logo //
+.logo-homepage img {
+  height: 100px;
 }
 
-// Main Navigation Section //
+.logo-subpage img {
+  height: 80px;
+}
+
+// Nav-bar Navigation Section //
 .navigation-menu{
   display: flex;
   align-items: center;
@@ -41,11 +54,23 @@
   .nav-item{
     margin: 0 0.7em;
     a{
+      color: #333;
       text-decoration:none;
-      color: #ffffff;
-      &:hover{
-        border-bottom: 2px solid white;
+      font-size: $header-size;
       }
     }
   }
+
+// For Animation
+.main-header, .logo-homepage>img, .logo-subpage>img{
+  transition: all 500ms ease-out;
 }
+.scrolled-nav{
+  height: 6em !important;
+  background-color: #ffffff;
+  border-bottom: 1px solid $product-hunt;
+  opacity: 1 !important;
+}
+.scrolled:hover{
+    border-bottom: 2px solid #6CBBC5 !important;
+  }

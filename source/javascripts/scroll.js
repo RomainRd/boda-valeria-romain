@@ -38,11 +38,26 @@ $('document').ready(function(){
 
     // Give an active class when tab is selected
     $('.nav-link').on('click', function(e){
-      console.log(e)
       $(this).toggleClass('nav-active');
     });
 
-    // Give
+    // Animate Navbar
+    $('#logo-subpage').hide();
+    var scrollTop = 0;
+    $(window).on('scroll', function(e){
+      const scrollTop = $(window).scrollTop();
+      if (scrollTop >= 100) {
+        $('.main-header').addClass('scrolled-nav');
+        $('.nav-link').addClass('scrolled');
+        $('#logo-subpage').show();
+        $('#logo-homepage').hide();
+      } else if (scrollTop < 100) {
+        $('.main-header').removeClass('scrolled-nav');
+        $('.nav-link').removeClass('scrolled');
+        $('#logo-subpage').hide();
+        $('#logo-homepage').show();
+       }
+  });
 });
 
 
