@@ -1,17 +1,41 @@
 /* VIDEO -- Main class */
 #save_the_date{
-  display: flex;
-  justify-content: center;
 }
 
-.white_body{
+.wrapper{
+  display: flex;
+  justify-content: center;
   text-align: center;
-  background-color: white;
   width: 100vw;
+}
+
+.white{
+  background-color: white;
+}
+
+.gray{
+  background-color: #F9F9F9;
 }
 
 iframe{
   width: 100%;
   height: 30em;
   border: none;
+}
+
+
+#rsvp{
+  height: 30em;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  .form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+  }
 }

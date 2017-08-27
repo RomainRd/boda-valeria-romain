@@ -1,54 +1,51 @@
 // BANNER //
 .banner {
   height: calc(100vh - 100px);
-  text-align: center;
-  background-image: url('../images/background_fin.png');
-  background-size: cover !important;
+  background: url('../images/banner-essai.png') no-repeat center center fixed;
+  // background: url('http://via.placeholder.com/1050x750') no-repeat center center fixed;
+}
+
+// Header //
+.main-header{
+  position: fixed;
+  height: 7em;
+  width: 100vw;
+  padding: 0px 30px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
-.banner-content{
-  background: url('./images/logonoir.png');
-  height: 100px;
+.main-header .nav-top .nav-logo>div{
+  transition: all 500ms ease;
 }
-.banner p{
-  font-size: 20px;
-  font-weight: lighter;
-  color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 20px;
+.main-header .nav-top .nav-logo a {
+    display: block;
 }
 
-// NAVBAR //
-.tabs{
+// Logo //
+.logo-homepage img, .logo-subpage img{
+    height: 100px
+}
+
+// Main Navigation Section //
+.navigation-menu{
   display: flex;
-  justify-content: center;
-  padding: 0 10px;
-  background-color: transparent;
-  position: relative;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.tabs a{
-  font-family:$header-font;
-  font-size: 1.3em;
-  color: black;
-  text-decoration: none;
-  &:hover{
-    cursor: pointer;
-    text-decoration: none;
-    color: #D09C67;
-  }
-}
-
-.tab{
-  background: white;
-  flex: 0 0 25%;
-  text-align: center;
-  padding: 10px 0;
-  &:first-child {
-    border-radius: 10px 0 0 0;
-  }
-  &:last-child{
-    border-radius: 0 10px 0 0;
+.navigation_links{
+  margin: 0;
+  cursor:pointer;
+  padding: 0 2em;
+  .nav-item{
+    margin: 0 0.7em;
+    a{
+      text-decoration:none;
+      color: #ffffff;
+      &:hover{
+        border-bottom: 2px solid white;
+      }
+    }
   }
 }

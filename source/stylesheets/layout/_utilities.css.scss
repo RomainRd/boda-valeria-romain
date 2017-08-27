@@ -4,10 +4,18 @@
  * Feel free to change them and create your own
  * ------------------------------------- */
 
-// Paddings
+// General //
 .padded {
   padding-top: 5em;
   padding-bottom: 5em;
+}
+
+.hidden{
+  display:none;
+}
+
+.nav-active{
+  border-bottom: 2px solid white;
 }
 
 // Backgrounds

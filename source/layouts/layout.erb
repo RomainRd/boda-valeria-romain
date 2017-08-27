@@ -37,5 +37,18 @@
     <%= partial "navbar" %>
     <%= yield %>
 
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+      var config = {
+        apiKey: "AIzaSyD4X2yforyDNvAnZ_lVWR8mZj5AZcTkOOI",
+        authDomain: "rsvp-valeria-romain.firebaseapp.com",
+        databaseURL: "https://rsvp-valeria-romain.firebaseio.com",
+        projectId: "rsvp-valeria-romain",
+        storageBucket: "rsvp-valeria-romain.appspot.com",
+        messagingSenderId: "942895886551"
+      };
+
+      firebase.initializeApp(config);
+    </script>
   </body>
 </html>
