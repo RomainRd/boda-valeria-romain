@@ -1,15 +1,62 @@
-<div id="save_the_date">
-  <div class="wrapper">
-    <iframe src="https://player.vimeo.com/video/225665857"
-      frameborder="0"
-      allowFullScreen></iframe>
+<!-- Save The Date! => The Sardines & Video -->
+
+<!-- The Sardines -->
+<div class="container mast" id="save_the_date">
+  <div class="the-sardines">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h1>The Sardines</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="the-sardines-all">
+        <div class="col-sm-12 col-md-8 text-center">
+
+          <div class="the-sardines-photos">
+            <div class="sardine-photo" id="valeria">
+              <%= image_tag "valeria.png", class:"sardine-photos", id:"valeria-hover" %>
+            </div>
+
+            <div class="sardine-photo" id="valeria">
+              <%= image_tag "valeria.png", class:"sardine-photos", id:"valeria-hover" %>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4">
+          <div class="the-sardines-text">
+            <h4>We're getting married!</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus maxime, voluptatem sed fugiat laboriosam! Accusantium ipsum quidem, cum mollitia, esse velit necessitatibus ex est error aspernatur ab odio asperiores, rem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi recusandae earum eum ipsam, excepturi et perspiciatis? Error officiis sunt commodi explicabo dolores, rerum est, ad, consequatur voluptas reiciendis dolorum ab.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi eum enim laboriosam odit harum quibusdam rem cumque voluptatum voluptate, sapiente facilis, itaque modi praesentium. Rem, ex. Modi tempore, sit ab!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<br>
+<br>
+
+  <div class="row video-holder">
+    <div class="col-sm-12 col-md-5 text-center">
+      <%= image_tag "savethedatetitre.png", class:"save-the-date-titre" %>
+    </div>
+    <div class="col-sm-12 col-md-7 text-center">
+      <iframe src="https://player.vimeo.com/video/225665857"
+        frameborder="0"
+        allowFullScreen></iframe>
+    </div>
   </div>
 </div>
 
-<div class="wrapper gray">
-  <div id="rsvp" class="white">
-    <div class="form">
 
+
+<!-- RSVP => Contact Form & Countdown -->
+<div class="wrapper">
+<!-- Contact Form -->
+  <div id="rsvp">
+    <div class="rsvp-full">
       <div class="rsvp-check" id="yes">
         <span>I'll be there!</span>
         <input type="checkbox">
@@ -19,13 +66,24 @@
         <input type="checkbox">
       </div>
 
-      <input id="firtname" type="text">
-      <input id="lastname" type="text">
-      <input id="email" type="text">
-      <input type="checkbox">
-      <input id="plusone" type="text">
-      <input id="children" type="number">
-      <a href="">send</a>
+      <div class="rsvp-details">
+        <div class="group" id="gp-one">
+          <input id="name" type="text" placeholder="Your name">
+          <input id="email" type="text" placeholder="Your email">
+        </div>
+        <div class="group" id="gp-two">
+          <input id="plusone" type="text" placeholder="Your lucky one">
+          <div class="group" id="sub">
+            <input id="children" type="number" value="0">
+            <input id="code" type="text" placeholder="Super Secret Code">
+          </div>
+        </div>
+        <div class="button-holder">
+          <button id="submit-rsvp">send</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+<!-- Countdown -->

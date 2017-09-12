@@ -1,0 +1,38 @@
+/* RSVP -- Main class */
+#rsvp{
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4em 0;
+  margin: 2em 0;
+  .rsvp-full{
+    width: 85%;
+  }
+  .rsvp-details{
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 12em;
+    margin-top: 1.5em;
+    .group{
+      display: flex;
+      justify-content: space-between;
+    }
+    #sub{
+      width: 48%;
+    }
+    input{
+      width: 48%;
+      margin: 10px 0;
+      padding-bottom: 7px;
+      border: 0;
+      border-bottom: 1px solid #515151;
+      background-color: transparent;
+      &::placeholder{
+        font-weight: lighter;
+        color: $gray-lighter;
+      }
+    }
+  }
+}

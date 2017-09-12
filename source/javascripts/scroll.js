@@ -4,7 +4,7 @@ $('document').ready(function(){
     // Remove links that don't actually link to anything
     .not('[href="#"]')
     .not('[href="#0"]')
-    .on('click', function(event) {
+    .on('click', function(event){
       // On-page links
       if (
         location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
@@ -20,31 +20,24 @@ $('document').ready(function(){
           event.preventDefault();
           $('html, body').animate({
             scrollTop: target.offset().top
-          }, 1000, function() {
+          }, 1000, () => {
             // Callback after animation
             // Must change focus!
             var $target = $(target);
-            $target.focus();
             if ($target.is(":focus")) { // Checking if the target was focused
               return false;
             } else {
               $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-              $target.focus(); // Set focus again
             };
           });
         }
       }
     });
 
-    // Give an active class when tab is selected
-    $('.nav-link').on('click', function(e){
-      $(this).toggleClass('nav-active');
-    });
-
     // Animate Navbar
     $('#logo-subpage').hide();
     var scrollTop = 0;
-    $(window).on('scroll', function(e){
+    $(window).on('scroll', (e) => {
       const scrollTop = $(window).scrollTop();
       if (scrollTop >= 100) {
         $('.main-header').addClass('scrolled-nav');
