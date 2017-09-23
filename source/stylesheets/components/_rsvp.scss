@@ -4,8 +4,8 @@
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  padding: 4em 0;
-  margin: 2em 0;
+  padding-top: 4em;
+  margin-top: 2em;
   .rsvp-full{
     width: 85%;
   }
@@ -13,10 +13,10 @@
     display: none;
     justify-content: space-between;
     flex-direction: column;
-    height: 15em;
+    height: 18em;
     margin-top: 2em;
     .rsvp-inputs{
-      height: 8em;
+      height: 11em;
       display: flex;
       justify-content: space-between;
       flex-direction: column;
@@ -27,6 +27,9 @@
     }
     #sub{
       width: 48%;
+    }
+    #song{
+      width: 100%;
     }
     input{
       width: 48%;
@@ -44,11 +47,11 @@
 }
 .rsvp-check{
   text-align: center;
-  h4{
+  h3{
     display: inline;
   }
   input[type="checkbox"]{
-    margin-left: 6vw;
+    margin-left: 3vw;
   }
 }
 #submit-rsvp{
@@ -64,4 +67,19 @@
     background-color: darken(#99d4dc, 15%);
     color: white;
   }
+}
+
+.division-rsvp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0 5em;
+  .rsvp-image{
+    position: absolute;
+    height: 14em;
+  }
+}
+
+.flower-division{
+  width: 100%;
 }
