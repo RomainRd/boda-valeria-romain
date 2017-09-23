@@ -1,0 +1,22 @@
+// Countdown
+.wrapper-green{
+  background-image: linear-gradient(0deg, rgba(153, 212, 220,1) 0%, rgba(153, 212, 220,0.5) 50%);
+}
+#countdown{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 25vh;
+  }
+  .cd-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    box-shadow: 1px 1px 12px #777777;
+    border-radius: 5px;
+}

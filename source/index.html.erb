@@ -15,11 +15,11 @@
 
           <div class="the-sardines-photos">
             <div class="sardine-photo" id="valeria">
-              <%= image_tag "valeria.png", class:"sardine-photos", id:"valeria-hover" %>
+              <%= image_tag "valeria.png", class:"sardine-photos", id:"valeria-hover"%>
             </div>
 
             <div class="sardine-photo" id="valeria">
-              <%= image_tag "valeria.png", class:"sardine-photos", id:"valeria-hover" %>
+              <%= image_tag "valeria.png", class:"sardine-photos", id:"valeria-hover"%>
             </div>
           </div>
         </div>
@@ -50,40 +50,81 @@
   </div>
 </div>
 
-
+<div class="wrapper-green">
+  <div class="container">
+    <div class="row">
+      <!-- <h2 class="col-xs-12 text-center">We'll be married in:</h2> -->
+      <div id="countdown" class="list-inline col-xs-10 col-xs-offset-1">
+        <li>
+          <div class="cd-box">
+            <h4 class="numbers days">00</h4>
+            <h4 class="strings timeRefDays">Days</h4>
+          </div>
+        </li>
+        <li>
+          <div class="cd-box">
+            <h4 class="numbers hours">00</h4>
+            <h4 class="strings timeRefHours">Hours</h4>
+          </div>
+        </li>
+        <li>
+          <div class="cd-box">
+            <h4 class="numbers minutes">00</h4>
+            <h4 class="strings timeRefMinutes">Minutes</h4>
+          </div>
+        </li>
+        <li>
+          <div class="cd-box">
+            <h4 class="numbers seconds">00</h4>
+            <h4 class="strings timeRefSeconds">Seconds</h4>
+          </div>
+        </li>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- RSVP => Contact Form & Countdown -->
-<div class="wrapper">
+<!-- <div class="wrapper"> -->
 <!-- Contact Form -->
-  <div id="rsvp">
-    <div class="rsvp-full">
-      <div class="rsvp-check" id="yes">
-        <span>I'll be there!</span>
-        <input type="checkbox">
-      </div>
-      <div class="rsvp-check" id="no">
-        <span>Sorry I can't...</span>
-        <input type="checkbox">
-      </div>
-
-      <div class="rsvp-details">
-        <div class="group" id="gp-one">
-          <input id="name" type="text" placeholder="Your name">
-          <input id="email" type="text" placeholder="Your email">
-        </div>
-        <div class="group" id="gp-two">
-          <input id="plusone" type="text" placeholder="Your lucky one">
-          <div class="group" id="sub">
-            <input id="children" type="number" value="0">
-            <input id="code" type="text" placeholder="Super Secret Code">
+<div class="container">
+  <div class="row">
+    <div id="rsvp">
+      <div class="rsvp-full">
+        <div class="rsvp-check-container">
+          <div class="rsvp-check" id="yes">
+            <h4>I'll be there!</h4>
+            <input type="checkbox" id="yes-check">
+          </div>
+          <div class="rsvp-check" id="no">
+            <h4>Sorry I can't...</h4>
+            <input type="checkbox" id="no-check">
           </div>
         </div>
-        <div class="button-holder">
-          <button id="submit-rsvp">send</button>
+
+        <div class="rsvp-details">
+          <div class="rsvp-inputs">
+            <div class="group" id="gp-one">
+              <input id="name" type="text" placeholder="Your name">
+              <input id="email" type="text" placeholder="Your email">
+            </div>
+            <div class="group" id="gp-two">
+              <input id="plusone" type="text" placeholder="Your lucky one">
+              <div class="group" id="sub">
+                <input id="children" type="number" placeholder="Children?">
+                <input id="code" type="text" placeholder="Super Secret Code">
+              </div>
+            </div>
+          </div>
+          <div class="button-holder text-center">
+            <button id="submit-rsvp">send</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
 
 <!-- Countdown -->

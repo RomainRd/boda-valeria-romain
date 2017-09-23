@@ -9,6 +9,8 @@ $('document').ready(() => {
   rsvpSubmit.on('click', (event) => {
     const firebaseRef = firebase.database().ref();
     const firebaseCode = firebaseRef.child('SuperSecretCode');
+    console.log($('#yes-checked').prop('checked', true));
+    console.log($('#no-checked').prop('checked'));
 
 
 

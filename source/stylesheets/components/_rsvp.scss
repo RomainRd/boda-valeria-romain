@@ -1,9 +1,9 @@
 /* RSVP -- Main class */
 #rsvp{
-  width: 75%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: column;
   padding: 4em 0;
   margin: 2em 0;
   .rsvp-full{
@@ -13,8 +13,14 @@
     display: none;
     justify-content: space-between;
     flex-direction: column;
-    height: 12em;
-    margin-top: 1.5em;
+    height: 15em;
+    margin-top: 2em;
+    .rsvp-inputs{
+      height: 8em;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
     .group{
       display: flex;
       justify-content: space-between;
@@ -34,5 +40,28 @@
         color: $gray-lighter;
       }
     }
+  }
+}
+.rsvp-check{
+  text-align: center;
+  h4{
+    display: inline;
+  }
+  input[type="checkbox"]{
+    margin-left: 6vw;
+  }
+}
+#submit-rsvp{
+  margin-top: 2em;
+  padding: 20px 30px;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid darken(#99d4dc, 15%);
+  color: darken(#99d4dc, 15%);
+  font-weight: bolder;
+  transition: all .5s ease-out;
+  &:hover{
+    background-color: darken(#99d4dc, 15%);
+    color: white;
   }
 }
