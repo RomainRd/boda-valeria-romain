@@ -1,0 +1,43 @@
+.event-card{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2em;
+  .event-image{
+    flex: 1 0 30%;
+    max-height: 25vh;
+    max-width: 12vw;
+    margin-right: 10px;
+  }
+}
+// MAPS
+.agostos-infos{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .agostos-left-pannel{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5em 4em;
+    height: 70vh;
+    font-weight: lighter;
+    text-align: justify;
+  }
+}
+
+#map{
+  flex: 1 0 75%;
+  height: 70vh;
+  float: right;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 995px) {
+  .agostos-left-pannel{
+    padding: 5em 1em;
+  }
+  #map{
+    flex: 1 0 65%;
+  }
+}

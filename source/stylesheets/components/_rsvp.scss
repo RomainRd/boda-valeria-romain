@@ -10,7 +10,7 @@
     width: 85%;
   }
   .rsvp-details{
-    display: none;
+    display: flex;
     justify-content: space-between;
     flex-direction: column;
     height: 18em;
@@ -95,7 +95,7 @@
 }
 
 #yes > .check-containter{
-  margin-left: 16px;
+  margin-left: 23px;
 }
 .label__checkbox {
   display: none;
@@ -104,7 +104,7 @@
 .label__check {
   display: inline-block;
   border-radius: 50%;
-  border: 2px solid rgba(0,0,0,0.1);
+  border: 2px solid rgba(0,0,0,0.3);
   background: white;
   vertical-align: middle;
   margin-right: 20px;
@@ -117,15 +117,18 @@
   transition: border .3s ease;
 
   i.icon {
-    opacity: 0.2;
+    opacity: 0.4;
     font-size: calc(1.2em);
     color: transparent;
     transition: opacity .3s .1s ease;
-    -webkit-text-stroke: 1.5px rgba(0,0,0,.5);
+    -webkit-text-stroke: 1.5px rgba(0,0,0,.7);
+    &:hover{
+      opacity: 0.6;
+    }
   }
 
   &:hover {
-    border: 2px solid rgba(0,0,0,0.2);
+    border: 2px solid rgba(0,0,0,0.5);
   }
 }
 #yes-check{
@@ -236,5 +239,54 @@
     background: #c30101;
     border: 0;
     opacity: 1;
+  }
+}
+
+// Modal
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.modal-card{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .modal-mood-icon{
+    font-size: 5em;
+    flex: 1 0 30%;
+  }
+}
+
+#button-modal{
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: darken(#99d4dc, 20%);
+  border: 1px solid darken(#99d4dc, 20%);
+  color: white;
+  font-weight: bolder;
+  transition: all .5s ease-out;
+  &:hover{
+    background-color: darken(#99d4dc, 15%);
+    border: 1px solid darken(#99d4dc, 15%);
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  .modal:before{
+    height: auto !important;
   }
 }

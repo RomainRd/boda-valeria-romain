@@ -28,9 +28,9 @@
     border-radius: 8px;
   }
   #romain{
-    height: 30em;
+    height: 100%;
     width: 18.2em;
-    background: url('../../images/romain2.png');
+    background: url('../../images/romainfinal.png');
     background-size: cover !important;
     background-repeat: no-repeat;
     background-position:top;
@@ -59,4 +59,8 @@
     border: none;
     z-index: -1;
   }
+}
+
+.flower-division{
+  margin-top: 2em;
 }
