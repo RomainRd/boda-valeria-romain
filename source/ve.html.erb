@@ -1,4 +1,4 @@
-<%= partial "navbar" %>
+<%= partial "navbar_ve" %>
 
 
 <!-- I/ Save The Date! => The Sardines & Video -->
@@ -8,7 +8,7 @@
   <div class="the-sardines">
     <div class="row">
       <div class="col-sm-12 text-center">
-        <h1>Les Sardines</h1>
+        <h1>Las Sardinas</h1>
       </div>
     </div>
 
@@ -29,7 +29,7 @@
 
         <div class="col-sm-12 col-md-4">
           <div class="the-sardines-text">
-            <h4>Après 6 ans ensembe, on se marie!</h4>
+            <h4>Después de 6 años nos vamos a casar!</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus maxime, voluptatem sed fugiat laboriosam! Accusantium ipsum quidem, cum mollitia, esse velit necessitatibus ex est error aspernatur ab odio asperiores, rem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi recusandae earum eum ipsam, excepturi et perspiciatis? Error officiis sunt commodi explicabo dolores, rerum est, ad, consequatur voluptas reiciendis dolorum ab.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi eum enim laboriosam odit harum quibusdam rem cumque voluptatum voluptate, sapiente facilis, itaque modi praesentium. Rem, ex. Modi tempore, sit ab!</p>
           </div>
@@ -62,25 +62,25 @@
         <li>
           <div class="cd-box">
             <h4 class="numbers days">00</h4>
-            <h4 class="strings timeRefDays">Jours</h4>
+            <h4 class="strings timeRefDays">Dias</h4>
           </div>
         </li>
         <li>
           <div class="cd-box">
             <h4 class="numbers hours">00</h4>
-            <h4 class="strings timeRefHours">Heures</h4>
+            <h4 class="strings timeRefHours">Horas</h4>
           </div>
         </li>
         <li>
           <div class="cd-box">
             <h4 class="numbers minutes">00</h4>
-            <h4 class="strings timeRefMinutes">Minutes</h4>
+            <h4 class="strings timeRefMinutes">Minutos</h4>
           </div>
         </li>
         <li>
           <div class="cd-box">
             <h4 class="numbers seconds">00</h4>
-            <h4 class="strings timeRefSeconds">Secondes</h4>
+            <h4 class="strings timeRefSeconds">Segundos</h4>
           </div>
         </li>
       </div>
@@ -104,7 +104,7 @@
             <div class="col-xs-12 col-md-6 col-md-offset-2">
               <div class="rsvp-check-container">
                 <div class="rsvp-check" id="yes">
-                  <h3>Comptez sur moi!</h3>
+                  <h3>Seguro, estaré !</h3>
                   <label class="label check-containter">
                     <input  class="label__checkbox" type="checkbox" id="yes-check"/>
                     <span class="label__text">
@@ -114,8 +114,9 @@
                     </span>
                   </label>
                 </div>
+
                 <div class="rsvp-check" id="no">
-                  <h3>Je penserai à vous...</h3>
+                  <h3>Brindaré de lejos...</h3>
                   <label class="label check-containter">
                     <input  class="label__checkbox" type="checkbox" id="no-check"/>
                     <span class="label__text">
@@ -126,6 +127,7 @@
                   </label>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -133,22 +135,22 @@
         <div class="rsvp-details">
           <div class="rsvp-inputs">
             <div class="group" id="gp-one">
-              <input id="name" type="text" placeholder="Ton nom">
-              <input id="email" type="text" placeholder="Ton email">
+              <input id="name" type="text" placeholder="Tu nombre completo">
+              <input id="email" type="text" placeholder="Tu email">
             </div>
             <div class="group">
-              <input id="song" type="text" placeholder="Ta musique">
+              <input id="song" type="text" placeholder="Tu musica">
             </div>
             <div class="group" id="gp-two">
-              <input id="plusone" type="text" placeholder="Ton +1">
+              <input id="plusone" type="text" placeholder="Tu +1">
               <div class="group" id="sub">
-                <input id="children" type="number" placeholder="N° d'enfants?">
+                <input id="children" type="number" placeholder="N° niños?">
                 <input id="code" type="text" placeholder="SecretCode">
               </div>
             </div>
           </div>
           <div class="button-holder text-center">
-            <button id="submit-rsvp" data-toggle="modal" data-target="#modal-not-yet">envoyer</button>
+            <button id="submit-rsvp" data-toggle="modal" data-target="#modal-not-yet">enviar</button>
           </div>
         </div>
       </div>
@@ -158,21 +160,21 @@
   </div>
 </div>
 
-<%= partial 'modal' %>
+<%= partial 'modal_ve' %>
 
 <!-- III/ The Events -->
 <div class="container" id="events">
   <div class="row">
     <div class="col-xs-12 text-center">
-      <h1>Les événements</h1>
+      <h1>Los eventos</h1>
       <br>
     </div>
   </div>
   <div class="row">
     <div class="col-xs-12 col-md-7 event-card" id='church'>
       <div class="event-text justify-right">
-        <h3>Mariage à l'église de <span>Santa Barbara de Nexe</span></h3>
-        <h4>14 Juillet 2018</h4>
+        <h3>Matrimonio en la iglesia de <span>Santa Barbara de Nexe</span></h3>
+        <h4>14 de Julio 2018</h4>
         <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptate, porro quis itaque similique reprehenderit quam</p>
       </div>
       <%= image_tag 'iglesia.png', class:'event-image' %>
@@ -183,8 +185,8 @@
     <div class="col-xs-12 col-md-7 col-md-offset-5 event-card" id='party'>
       <%= image_tag 'fiesta.png', class:'event-image' %>
       <div class="event-text">
-        <h3>On fait la fête à Os Agostos!</h3>
-        <h4>14 Juillet 2018</h4>
+        <h3>Celebramos en Os Agostos!</h3>
+        <h4>14 de Julio 2018</h4>
         <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptate, porro quis itaque similique reprehenderit quam</p>
       </div>
     </div>
@@ -193,8 +195,8 @@
   <div class="row">
     <div class="col-xs-12 col-md-7 event-card" id='beach'>
       <div class="event-text justify-right">
-        <h3>Le lendemain sur la plage</h3>
-        <h4>15 Juillet 2018</h4>
+        <h3>El dia siguiente en la playa</h3>
+        <h4>15 de Julio 2018</h4>
         <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptate, porro quis itaque similique reprehenderit quam</p>
       </div>
       <%= image_tag 'playa.png', class:'event-image' %>
@@ -212,9 +214,9 @@
       <h3>Os Agostos</h3>
     </div>
     <div class="agostos-text">
-      <p><strong>Adresse:</strong> Largo do Batalhão Sapadores Caminho de Ferro 20, 8100 Loulé, Portugal</p>
-      <p><strong>Depuis Faro:</strong> 18min en voiture</p>
-      <p><strong>Depuis Tavira:</strong> 25min en voiture</p>
+      <p>Dirección: Largo do Batalhão Sapadores Caminho de Ferro 20, 8100 Loulé, Portugal</p>
+      <p>Desde Faro: 18min en carro</p>
+      <p>Desde Tavira: 25min en carro</p>
     </div>
   </div>
 

@@ -40,6 +40,31 @@
   height: 80px;
 }
 
+// Dropdown language //
+#navbar-dropdown{
+  width: 80px !important;
+  top: 150% !important;
+  left: -31px !important;
+  min-width: 0px !important;
+  border-radius: 5px;
+  &:before {
+    content: ' ';
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    right: 34px;
+    top: -6px;
+    background-color: white;
+    transform: rotate(45deg);
+    border-left: 1px solid #E6E6E6;
+    border-top: 1px solid #E6E6E6;
+  }
+}
+.flag{
+  max-height: 25px;
+}
+
+
 // Nav-bar Navigation Section //
 .navigation-menu{
   display: flex;
@@ -120,6 +145,9 @@
 
 @media only screen and (max-width: 995px) {
 // Insert all mobile styles here
+  .responsive-language{
+    margin: 10px 0;
+  }
   .main-header{
     justify-content: space-between;
   }

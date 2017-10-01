@@ -9,6 +9,7 @@ $('document').ready( () => {
     const rsvpSubmit = $('#submit-rsvp');
     const firebaseRef = firebase.database().ref();
     const firebaseCode = firebaseRef.child('SuperSecretCode');
+    var sendable = false
     rsvpSubmit.on('click', (event) => {
       // RSVP fields
       const guestName = $('#name');
@@ -18,7 +19,7 @@ $('document').ready( () => {
       const guestChildren = $('#children');
       const code = $('#code');
       const comming = $('#yes-check').is(':checked');
-      let sendable = false
+      const notComming = $('#no-check').is(':checked');
       // adapt modal to information
       if (comming == true               &&
           guestName.val() != ""         &&
@@ -27,15 +28,16 @@ $('document').ready( () => {
           song.val() != ""              &&
           code.val() == 'sardinelove') {
         $('#submit-rsvp').attr('data-target', '#modal-comming');
-        let sendable = true;
+        sendable = true;
       };
-      if(comming == false               &&
+      if(notComming == true             &&
           guestName.val() != ""         &&
           guestEmail.val() != ""        &&
           guestChildren.val() != ""     &&
           song.val() != ""              &&
           code.val() == 'sardinelove') {
         $('#submit-rsvp').attr('data-target', '#modal-not-comming');
+        sendable = true;
       }
       if (guestName.val() === ""         &&
           guestEmail.val() === ""        &&
@@ -43,6 +45,7 @@ $('document').ready( () => {
           song.val() === ""              &&
           code.val() !== 'sardinelove') {
         $('#submit-rsvp').attr('data-target', '#modal-not-yet');
+        sendable = false
       }
 
       // send the information
@@ -54,7 +57,6 @@ $('document').ready( () => {
         plusOneName: guestPlusOneName.val(),
         children: guestChildren.val()
       };
-
       firebaseCode.on('value', function(datasnapshot){
         if (code.val() === datasnapshot.val() && sendable == true) {
           firebaseRef.push().set(rsvpObject);

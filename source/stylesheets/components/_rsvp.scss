@@ -48,7 +48,7 @@
 .rsvp-check{
   text-align: center;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   h3{
     display: inline;
@@ -171,21 +171,16 @@
 }
 
 @keyframes checkyes {
-  0% {
-    width: 1.5em;
-    height: 1.5em;
-    border-width: 5px;
-  }
   10% {
-    width: 1.5em;
-    height: 1.5em;
+    width: 2em;
+    height: 2em;
     opacity: 0.1;
     background: rgba(0,0,0,0.2);
     border-width: 15px;
   }
   12% {
-    width: 1.5em;
-    height: 1.5em;
+    width: 2em;
+    height: 2em;
     opacity: 0.4;
     background: rgba(0,0,0,0.1);
     border-width: 0;
@@ -207,21 +202,16 @@
 }
 
 @keyframes checkno {
-  0% {
-    width: 1.5em;
-    height: 1.5em;
-    border-width: 5px;
-  }
   10% {
-    width: 1.5em;
-    height: 1.5em;
+    width: 2em;
+    height: 2em;
     opacity: 0.1;
     background: rgba(0,0,0,0.2);
     border-width: 15px;
   }
   12% {
-    width: 1.5em;
-    height: 1.5em;
+    width: 2em;
+    height: 2em;
     opacity: 0.4;
     background: rgba(0,0,0,0.1);
     border-width: 0;
