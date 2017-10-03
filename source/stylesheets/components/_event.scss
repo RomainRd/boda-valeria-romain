@@ -31,6 +31,10 @@
   height: 70vh;
   float: right;
   background-color: transparent;
+  iframe{
+    height: 100%;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 995px) {

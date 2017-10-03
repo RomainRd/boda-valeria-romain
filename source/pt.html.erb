@@ -40,7 +40,6 @@
   </div>
 
 <br>
-<br>
 <!-- Video -->
   <div class="row video-holder">
     <div class="col-sm-12 col-md-5 text-center">
@@ -170,40 +169,33 @@
       <br>
     </div>
   </div>
-  <div class="row">
-    <div class="col-xs-12 col-md-7 event-card" id='church'>
-      <div class="event-text justify-right">
-        <h3>Casamento na igreja de <span>Santa Barbara de Nexe</span></h3>
-        <h4>14 de Julho 2018</h4>
-        <p class="text-justify">Trocaremos alianças na igreja de Santa Barbara, ao fim da tarde. Depois disto, estaremos oficialmente casados!</p>
-      </div>
-      <%= image_tag 'iglesia.png', class:'event-image' %>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col-xs-12 col-md-7 col-md-offset-5 event-card" id='party'>
-      <%= image_tag 'fiesta.png', class:'event-image' %>
-      <div class="event-text">
-        <h3>Festejamos nos Agostos!</h3>
-        <h4>14 de Julho 2018</h4>
-        <p class="text-justify">Não existe melhor razão para festejar! Preparem-se a dançar. Dress Code: Casual Chic!</p>
+  <% data.events_pt.each_with_index do |e, i| %>
+    <% if i.odd? %>
+      <div class="row">
+        <div class="col-xs-12 col-md-7 col-md-offset-5 event-card">
+          <%= image_tag e.image, class:'event-image' %>
+          <div class="event-text">
+            <h3><%= e.title %></h3>
+            <h4><%= e.date %></h4>
+            <p class="text-justify"><%= e.description %></p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-12 col-md-7 event-card" id='beach'>
-      <div class="event-text justify-right">
-        <h3>O dia seguinte na praia</h3>
-        <h4>15 de Julho 2018</h4>
-        <p class="text-justify">Um descanso merecido na praia... Um momento especial para ouvir todas as histórias do dia anterior.</p>
+    <% else %>
+      <div class="row">
+        <div class="col-xs-12 col-md-7 event-card">
+          <div class="event-text justify-right">
+            <h3><%= e.title %></h3>
+            <h4><%= e.date %></h4>
+            <p class="text-justify"><%= e.description %></p>
+          </div>
+          <%= image_tag e.image, class:'event-image' %>
+        </div>
       </div>
-      <%= image_tag 'playa.png', class:'event-image' %>
-    </div>
-  </div>
+    <% end %>
+  <% end %>
 </div>
-
 <!-- IV/ Os Agostos -->
 <div class="agostos-infos" id="agostos">
   <div class="agostos-left-pannel">

@@ -1,0 +1,15 @@
+- church:
+  title: Casamento na igreja de Santa Barbara de Nexe
+  date: 14 de Julho 2018
+  description: Trocaremos alianças na igreja de Santa Barbara, ao fim da tarde. Depois disto, estaremos oficialmente casados!
+  image: iglesia.png
+- party:
+  title: Festejamos nos Agostos!
+  date: 14 de Julho 2018
+  description: Não existe melhor razão para festejar! Preparem-se a dançar. Dress Code -> Casual Chic!
+  image: fiesta.png
+- beach:
+  title: O dia seguinte na praia
+  date: 15 de Julho 2018
+  description: Um descanso merecido na praia... Um momento especial para ouvir todas as histórias do dia anterior.
+  image: playa.png

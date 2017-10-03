@@ -1,0 +1,15 @@
+- church:
+  title: Mariage à l'église de Santa Barbara de Nexe
+  date: 14 Juillet 2018
+  description: Nous échangerons nos alliances à l'église, à la fin de l'après-midi. Après ça, nous serons officiellement marriés!
+  image: iglesia.png
+- party:
+  title: On fait la fête à Os Agostos!
+  date: 14 Juillet 2018
+  description: Quelle meilleure raison pour faire la fête? Préparez-vous à danser! Dress Code -> Casual Chic!
+  image: fiesta.png
+- beach:
+  title: Le lendemain sur la plage
+  date: 15 Juillet 2018
+  description: Un repos bien mérité sur la plage... Retrouvons-nous tous ensemble pour nous raconter les histoires de la veille.
+  image: playa.png
