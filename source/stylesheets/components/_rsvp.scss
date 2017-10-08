@@ -286,3 +286,20 @@
     height: auto !important;
   }
 }
+
+@media only screen and (max-width: 991px) {
+  .rsvp-image{
+    height: 12em !important;
+  }
+  .rsvp-check{
+    h3{
+      font-size: 22px;
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .rsvp-check{
+    width: 90%;
+  }
+}

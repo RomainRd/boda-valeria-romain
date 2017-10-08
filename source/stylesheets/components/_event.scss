@@ -45,3 +45,28 @@
     flex: 1 0 60%;
   }
 }
+
+@media only screen and (max-width: 1050px) {
+  .agostos-left-pannel{
+    padding: 4em 4em !important;
+  }
+  #map{
+    flex: 1 0 60%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .agostos-infos{
+    display: block;
+  }
+  .agostos-left-pannel{
+    height: 50vh !important;
+  }
+  #map{
+    height: 50vh !important;
+    float: none;
+  }
+  .event-image{
+    max-width: 27vw !important;
+  }
+}

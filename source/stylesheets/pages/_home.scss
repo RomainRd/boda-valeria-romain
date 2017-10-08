@@ -81,8 +81,18 @@
 
   .the-sardines-photos img{
     height: 18em;
+    width: 100%;
   }
   .sardine-photo{
-    width: 10em !important;
+    width: 100% !important;
+  }
+  #romain{
+    margin-right: 10px;
+  }
+  .video-holder{
+    margin-top: -30px;
+    .save-the-date-titre{
+      margin-bottom: 15px;
+    }
   }
 }

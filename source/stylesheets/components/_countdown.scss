@@ -17,3 +17,9 @@
     box-shadow: 1px 1px 12px #777777;
     border-radius: 5px;
 }
+@media only screen and (max-width: 500px) {
+  .cd-box{
+    width: 80px !important;
+    height: 80px !important;
+  }
+}
