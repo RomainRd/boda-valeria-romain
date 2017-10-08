@@ -18,8 +18,6 @@ $('document').ready( () => {
   const guestPlusOneName = $('#plusone');
   const guestChildren = $('#children');
   const code = $('#code');
-  const comming = $('#yes-check').is(':checked');
-  const notComming = $('#no-check').is(':checked');
 
   $('#no-check').on('click', (e) =>{
     $('#yes-check').removeAttr('checked');
@@ -30,41 +28,39 @@ $('document').ready( () => {
 
 
   rsvpSubmit.on('click', (event) => {
-
+  const comming = $('#yes-check').is(':checked');
+  const notComming = $('#no-check').is(':checked');
 
     // adapt modal to information
-    if (comming == true                             &&
-        guestName.val() != ""                       &&
-        validateEmail(guestEmail.val()) == true     &&
-        guestChildren.val() != ""                   &&
-        song.val() != ""                            &&
+    if (comming === true                            &&
+        guestName.val() !== ""                       &&
+        validateEmail(guestEmail.val()) === true     &&
+        guestChildren.val() !== ""                   &&
+        song.val() !== ""                            &&
         firebaseCode.on('value', function(datasnapshot){
           code.val() === datasnapshot.val();
-        })) {
+        })
+        )
+    {
+      sendable = true;
       $('#submit-rsvp').attr('data-target', '#modal-comming');
-      sendable = true;
     };
-    if(notComming == true                           &&
-        guestName.val() != ""                       &&
-        validateEmail(guestEmail.val()) == true     &&
-        guestChildren.val() != ""                   &&
-        song.val() != ""                            &&
+
+    if (notComming === true                          &&
+        guestName.val() !== ""                       &&
+        validateEmail(guestEmail.val()) === true     &&
+        guestChildren.val() !== ""                   &&
+        song.val() !== ""                            &&
         firebaseCode.on('value', function(datasnapshot){
           code.val() === datasnapshot.val();
         })) {
-      $('#submit-rsvp').attr('data-target', '#modal-not-comming');
       sendable = true;
-    }
-    if (guestName.val() === ""                      &&
-        guestEmail.val() === ""                     &&
-        validateEmail(guestEmail.val()) == false    &&
-        song.val() === ""                           &&
-        firebaseCode.on('value', function(datasnapshot){
-          code.val() === datasnapshot.val();
-        })) {
+      $('#submit-rsvp').attr('data-target', '#modal-not-comming');
+    };
+
+    if (sendable === false) {
       $('#submit-rsvp').attr('data-target', '#modal-not-yet');
-      sendable = false
-    }
+    };
 
     // send the information
     const rsvpObject = {
@@ -83,7 +79,3 @@ $('document').ready( () => {
   });
 
 });
-
-  // $('.rsvp-check input').on('click', (e) => {
-
-  // });
